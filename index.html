@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Intro to HTML, CSS and Github</title>
 		
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -18,16 +18,30 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				<!-- slide 1 -->
+				<section>
+					<h1>Hi, I'm <span style="color : red ;">Mohamed Fares Andaloussi</span></h1>
+				</section>
+				<!-- slide 2 -->
 				<section>
 					<h1>This presentation is made with <span style="color : red ;">HTML</span>,
 						 <span style="color : red ;">CSS</span> and 
 						 <span style="color : red ;">Javascript</span></h1>
 				</section>
+				<!-- slide 3 -->
+				<section>
+					<h1>Thanks to <span style="color : red ;">reveal.js</span>
+						an open source Javascript Library,check it out on Github
+				</section>
+				<!-- slide 4 -->
 				<section>
 					<h1>
-						You can do pretty much everything ..
+						With <span style="color : red ;">HTML</span>,
+						<span style="color : red ;">CSS</span> and 
+						<span style="color : red ;">Javascript</span>, You can do pretty much everything ..
 					</h1>
 				</section>
+				<!-- slide 5 -->
 				<section id ="section3"data-background-size="1000px"> 
 					<input type = "button" onclick = "play()" value = "music">  
 
@@ -46,11 +60,12 @@
 						<div id="street"></div>
 						
 				</section>
+				<!-- slide 5 -->
 				<section data-background-size="300px" >
 					
 						<h3><span style="color: red;">Content of this workshop</span></h3>
 						<ol>
-						<li>Introduction the Web Development </li>
+						<li>Introduction to Web Development </li>
 						<li>Basic HTML Code </li>
 						<li>basic structure </li>
 						<li>useful HTML elements :</li>
@@ -58,15 +73,191 @@
 									<li>paragraph, header tags etc ... </li>
 									<li>HTML Attributes </li>
 									<li>Inline elements vs block elements</li>
-							</ol>			
+							</ol>		
+							<li>Basic CSS3 :</li>
+							<ol>
+								<li>CSS Selector </li>
+								<li>CSS box model</li> 
+							</ol>	
 						</ol>
+						
+				</section>
+				<!-- slide 6 -->
+				<!--Introduction part-->
+				<section>
+					<section>
+						<h1>1-Introduction to Web Development </h1>
+					</section>
+					<section>
+					<p>Web development is <span style="color : red ; ">the building</span> and <span style="color : red ; ">maintenance</span> of websites</p>
+					</section>
+					<section>
+					<p>	it's the work that happens <span style="color : red ; ">behind the scenes</span> 
+						to make a website looks <span style="color : red ; ">great</span>,
+						work <span style="color : red ; ">fast</span> and perform well with a seamless user experience
+					</p>
+					</section>
+				</section>
+				<!--Basic HTML Code -->
+				<section>
+					<section><h1>2-Basic HTML Code</h1></section>
+					<section>
+						<h3>Basic Structure</h3>
+					</section>
+					<section data-markdown>
+						<textarea data-template="">
+							HTML Document Structure
+							``` 
+							<html>
+								<head>
+									document header related tags
+								</head>
+								<body>
+									document body related tags
+								</body>
+							</html>
+							```
+						</textarea>
+					</section>
+
+					<section data-markdown>
+						<textarea data-template="">
+							Example one
+							``` 
+							<html>
+								<head>
+									<title>Intro to HTML, CSS and Github</title>
+								</head>
+								<body>
+									<h5>This is a header h5 </h5>
+									<p>This is a paragraph</p>
+								</body>
+							</html>
+							```
+						</textarea>
+					</section>
+					<section>
+						<h5>This is a header h5 </h5>
+						<p> This is a paragraph</p>
+					</section>
+					<section>
+						<img src="HTML_Tags.jpg" >
+					</section>
+					<section>
+						<h3>Useful HTML tags examples</h3>
+					</section>
+					<section>
+						<h4>Tag headings</h4>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							Heading example
+							``` 
+							<html>
+								<head>
+									<title>Intro to HTML, CSS and Github</title>
+								</head>
+								<body>
+									<h1>This is h1</h1>
+									<h2>This is h2</h2>
+									<h3>This is h3</h3>
+									<h4>This is h4</h4>
+									<h5>This is h5</h5>
+									<h6>This is h6</h6>
+								</body>
+							</html>
+							```
+							</textarea>
+						</section>
+
+					<section>
+						<h1>This is h1</h1>
+						<h2>This is h2</h2>
+						<h3>This is h3</h3>
+						<h4>This is h4</h4>
+						<h5>This is h5</h5>
+						<h6>This is h6</h6>
+					</section>
+					<section>
+						<h4>Paragrpah and line break</h4>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							paragraph and line break example
+							``` 
+							<html>
+								<head>
+									<title>Intro to HTML, CSS and Github</title>
+								</head>
+								<body>
+									<p>Hello<br> I'm currently learning HTML ...</p>
+								</body>
+							</html>
+							```
+							</textarea>
+						</section>
+
+					<section>
+						<p>Hello<br> I'm currently learning HTML ...</p>
+					</section>
+					<section>
+						<h4>HR (horizontal line)</h4>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							hr example
+							``` 
+							<html>
+								<head>
+									<title>Intro to HTML, CSS and Github</title>
+								</head>
+								<body>
+									<p>let's do hr <p>
+									<hr>
+									<p>done</p>
+								</body>
+							</html>
+							```
+							</textarea>
+						</section>
+
+					<section>
+						<p>let's do hr <p>
+						<hr>
+						<p>done</p>
+					</section>
+					<section>
+						<h4>Nested elements example</h4>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							nested elements example example
+							``` 
+							<html>
+								<head>
+									<title>Intro to HTML, CSS and Github</title>
+								</head>
+								<body>
+									<p>This is <u>underlined</u></p>
+								</body>
+							</html>
+							```
+							</textarea>
+						</section>
+
+					<section>
+						<p>This is <u>underlined</u></p>
+					</section>
+
+					
+
 				</section>
 				<section>
 					<section data-markdown >
 						<textarea data-template>
 						
-						Web development is the building and maintenance of websites;<br>
-						it's the work that happens behind the scenes to make a website look great,
+						Web development is the building and maintenance of websites;
+						it's the work that happens behind the scenes to make a website looks great,
 						work fast and perform well with a seamless user experience
 						``` 
 						var r = 4 ; 
