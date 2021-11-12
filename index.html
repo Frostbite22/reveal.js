@@ -61,27 +61,37 @@
 						
 				</section>
 				<!-- slide 5 -->
+				<section>
 				<section data-background-size="300px" >
 					
 						<h3><span style="color: red;">Content of this workshop</span></h3>
 						<ol>
 						<li>Introduction to Web Development </li>
 						<li>Basic HTML Code </li>
+						<ol>
 						<li>basic structure </li>
 						<li>useful HTML elements :</li>
 							<ol>
 									<li>paragraph, header tags etc ... </li>
-									<li>HTML Attributes </li>
-									<li>Inline elements vs block elements</li>
-							</ol>		
+							</ol>	
+						<li>HTML Attributes </li>
+						<li>Inline elements vs block elements</li>
+						</ol>	
 							<li>Basic CSS3 :</li>
 							<ol>
 								<li>CSS Selector </li>
 								<li>CSS box model</li> 
 							</ol>	
-						</ol>
-						
+					</ol>	
 				</section>
+				<section>
+				<ol start=4 >
+					<li>Github : add, commit, push,instructions</li>
+					<li>Tasks </li>
+					<li>Resources </li>
+				</ol>
+				</section>
+			</section>
 				<!-- slide 6 -->
 				<!--Introduction part-->
 				<section>
@@ -99,8 +109,9 @@
 					</section>
 				</section>
 				<!--Basic HTML Code -->
+				<!--section 2-->
 				<section>
-					<section><h1>2-Basic HTML Code</h1></section>
+					<section><h1>2-Basic HTML Code</h1> <h2>Hypertext Markup Language</h2></section>
 					<section>
 						<h3>Basic Structure</h3>
 					</section>
@@ -248,9 +259,215 @@
 					<section>
 						<p>This is <u>underlined</u></p>
 					</section>
+					<section>
+						<h4>div tag</h4>
+					</section>
+					<section>
+						<div style="color: aqua; padding: 50px; background-color: beige;">this is a division 1</div>
+						<div>This is a division 2</div>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							division is an block element ; always starts on a new line
+							``` 
+							<html>
+								<head>
+									<title>Intro to HTML, CSS and Github</title>
+								</head>
+								<body>
+									<div style="color: aqua; padding: 50px;
+									 background-color: beige;">
+									this is a division 1</div>
 
-					
+									<div>This is a division 2</div>
+								</body>
+							</html>
+							```
+							</textarea>
+						</section>
+					<section>
+						<p>Style we just used is one of the HTML Attributes</p>
+					</section>
+					<section>
+						<h3>HTML Attributes</h3>
+					</section>
+					<section>
+						<h5 style="color: red;">Main Html Attributes</h5>
+						<p>
+							The four core attributes that can be used on
+							the majority of HTML elements (although not all) are:  
+						</p>
+						<p>id</p><p>title</p><p>style</p><p>class</p>
+					</section>
+					<section>
+						<p>Through HTML attributes, we can access to CSS</p>
+						<p><span style="color:red;">CSS</span> : Cascading Style Sheets</p>
+					</section>
+					<section>
+						<h3>Inline elements vs block elements</h3>
+					</section>
+					<section>
+						Block elements ; always starts on a new line
+						<img src="block_elem.png">
+					</section>
+					<section>
+						inline elements ; stays in the same line
+						<img src="inline_elem.png">
+					</section>
 
+					<section data-markdown>
+						<textarea data-template>
+							block vs inline elements
+							``` 
+							<html>
+								<head>
+									<title>Intro to HTML, CSS and Github</title>
+								</head>
+								<body>
+									<h2>Header is block</h2>
+									<p>
+										Paragraph is block element, otherwise 
+										<span style="color :red;">span</span>
+										is inline 
+									</p>
+								</body>
+							</html>
+							```
+							</textarea>
+						</section>
+						<section>
+							<h2>Header is block</h2>
+							<p>
+								Paragraph is block element, otherwise 
+								<span style="color :red;">span</span>
+								is inline 
+							</p>
+						</section>
+						<section>
+							<div style="height:700px">
+								<img src="meme_end.jpg" >
+							</div>
+							
+						</section>
+						<section>
+							<img src="meme_end_2.jpg">
+						</section>
+
+				</section>
+
+				<!--Part 3 CSS-->
+				<section>
+					<section>
+						<h1>3-CSS3</h1>
+					</section>
+					<section>
+						<img src="website.jpg">
+					</section>
+					<section>
+						<img src="css_meme.jpg">
+					</section>
+					<section>
+						<img src="css_meme2.jpg">
+					</section>
+					<section>
+						<h1>CSS selectors</h1>
+					</section>
+					<section>
+						<p>CSS selectors are used to “find” (or select) the HTML elements you want to style.
+						</p>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							block vs inline elements
+							``` 
+							<html>
+								<head>
+									<title>Intro to HTML, CSS and Github</title>
+								</head>
+								<style>
+									p 
+									{
+										text-align: center;
+										color :red ;
+									}
+									#para1 
+									{
+										color : aqua; 
+									}
+								</style>
+								<body>
+									<p>
+										Every paragraph will be red, align center
+									</p>
+									<p id="para1">This one have id para1 will be aqua</p>
+									<p>Red also</p>
+								</body>
+							</html>
+							```
+							</textarea>
+						</section>
+						<section>
+							<p style="color :red; text-align : center">
+								Every paragraph will be red, align center
+							</p>
+							<p style="color :aqua; text-align : center">This one have id para1 will be aqua</p>	
+							<p style="color :red; text-align : center">Red also</p>
+						</section>
+						<section>
+							<h1>CSS Box Model</h1>
+						</section>
+						<section>
+							<img src="box_model_css.png">
+						</section>
+
+						<section data-markdown>
+							<textarea data-template>
+								block vs inline elements
+								``` 
+								<html>
+									<head>
+										<title>Intro to HTML, CSS and Github</title>
+									</head>
+									<style>
+										div 
+										{
+											background-color: lightblue;
+											width: 200px;
+											border: 15px solid green;
+											padding: 50px;
+											margin : 20px ;
+										}
+									</style>
+									<body>
+										<h3>Demo box model</h3>
+										<p>
+											Paragraph, as always 
+										</p>
+										<div>This text is the content of the box</div>
+									</body>
+								</html>
+								```
+								</textarea>
+						</section>
+						<section>
+							<h3>Demo box model</h3>
+							<p>
+								Paragraph, as always 
+							</p>
+							<div style="background-color: lightblue;
+							width: 200px;
+							border: 15px solid green;
+							padding: 50px;
+							margin : 30px ;
+							">This text is the content of the box</div>
+						</section>
+				</section>
+
+				<!-- Github-->
+				<section>
+					<section>
+						<h1>4-Github</h1>
+					</section>
 				</section>
 				<section>
 					<section data-markdown >
